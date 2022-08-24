@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Livescore</title>
+</head>
+<body>
+<style type="text/css">
+    body {
+        font-size: 13px;
+        font-family: Arial, sans-serif;
+        color: #290011;
+        background: #F5F5F5;
+        text-align: center;
+        margin: 0; }
+    a {
+        text-decoration: none;
+        color: #290011; }
+    a:hover {
+        text-decoration: underline; }
+    .text-center {
+        text-align: center !important; }
+    .main-wrapper {
+        text-align: left;
+        background-color: #fafafa;
+        border-left: 1px solid #CECECE;
+        border-right: 1px solid #CECECE;
+        border-bottom: 1px solid #CECECE;
+        max-width: 500px;
+        min-width: 220px;
+        z-index: 100;
+        color: #151515;
+        margin-left: auto;
+        margin-right: auto; }
+    .header .logo-wrap {
+        padding: 4px;
+        background-color: #fff; }
+    .header .logo-wrap a.logo {
+        color: #fff;
+        text-decoration: none; }
+    .content {
+        background: transparent; }
+    .content h1.title-content {
+        background: #EF4949;
+        color: #f9c4c4;
+        padding-left: 15px;
+        margin-top: 0;
+        margin-bottom: 10px; }
+    .nav-wrap {
+        padding: 5px 5px 10px 5px; }
+    .nav-wrap .sorting-day {
+        margin: 0 0 10px 0; }
+    .nav-wrap .sorting-day a {
+        color: #290011; }
+    .nav-wrap .sorting-day a:hover {
+        color: #F23E00;
+        text-decoration: none; }
+    .nav-wrap .sorting-league a {
+        color: #ADADAD; }
+    .nav-wrap .sorting-league a:hover {
+        color: #F23E00;
+        text-decoration: none; }
+    .nav-wrap .sorting-league p {
+        color: #808080; }
+    .nav-wrap form.search {
+        margin: 0 0 10px 0; }
+    .refresh {
+        color: #d73739;
+        font-weight: bold; }
+    .content {
+        background: transparent; }
+    .content h1.title-content {
+        background: #EF4949;
+        color: #f9c4c4;
+        padding-left: 15px;
+        margin-top: 0;
+        margin-bottom: 10px; }
+    .content > p {
+        margin: 15px 10px; }
+    .footer .copyright {
+        background-color: #839390;
+        padding-top: 6px;
+        padding-bottom: 10px;
+        color: #ced3d9;
+        text-align: center; }
+    .footer .copyright a {
+        color: #fff;
+        font-weight: bold; }
+</style>
+<div class="main-wrapper">
+    <div class="header">
+        <div class="logo-wrap">
+            <a href="/" class="logo">
+                <img style="width: 140px;" src="data:image/png;base64,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" alt="logo">
+            </a>
+        </div>
+    </div>
+    <div class="content">
+        <h1 class="title-content text-center">404 - Page not found</h1>
+
+        <div class="nav-wrap">
+            <div class="sorting-day">
+                <a href="/live" title="Live Scores">Live</a> |
+                <a href="/today" title="Today Scores">Today</a> |
+                <a href="/yesterday" title="Yesterday Scores">Yesterday</a> |
+                <a href="/notstarted" title="Not Started Scores">Not Started</a> |
+                <a href="/finished" title="Finished Scores">Finished</a>
+            </div>
+            <form class="search" action="/">
+                <a href="/" title="Refresh" class="refresh">
+                    <img src="data:image/gif;base64,R0lGODlhCwAOAJEDAOiMjvzu7tc3OQAAACH5BAEAAAMALAAAAAALAA4AAAIpnBdwi6LcHAgMiHvnCTm5xT0WtT3DBx6WBllo5Qjk5oSzR3GSe7u1UQAAOw==" alt="Refresh">
+                    Refresh
+                </a> |
+            </form>
+        </div>
+        <p style="font-size: 16px;">Page not found. Sorry, but this link is broken. Please, return to the Homepage</p>
+        <br>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">
+            ©  Free Livescore site, mobile livescore, livescore today <br>
+            Football Predictions, Soccer Predictions, Score live, Soccer results, Live football scores, Latest football scores <br>
+            2001  <a href="http://livescores.biz" title="livescores.biz">livescores.biz</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

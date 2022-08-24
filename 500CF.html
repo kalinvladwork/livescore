@@ -1,0 +1,157 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Livescore</title>
+
+
+</head>
+<body>
+<style type="text/css">body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin: 0;
+    text-align: center
+}
+
+a, body {
+    color: #290011
+}
+.fs14 {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+.text-center {
+    text-align: center !important
+}
+
+.main-wrapper {
+    background-color: #fafafa;
+    border-bottom: 1px solid #cecece;
+    border-left: 1px solid #cecece;
+    border-right: 1px solid #cecece;
+    color: #151515;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    min-width: 220px;
+    text-align: left;
+    z-index: 100
+}
+
+.header .logo-wrap {
+    background-color: #fff;
+    padding: 4px
+}
+
+.header .logo-wrap a.logo {
+    color: #fff;
+    text-decoration: none
+}
+
+.nav-wrap .sorting-day a {
+    color: #290011
+}
+
+.nav-wrap .sorting-day a:hover {
+    color: #f23e00;
+    text-decoration: none
+}
+
+.nav-wrap .sorting-league a {
+    color: #adadad
+}
+
+.nav-wrap .sorting-league a:hover {
+    color: #f23e00;
+    text-decoration: none
+}
+
+.nav-wrap .sorting-league p {
+    color: grey
+}
+
+.content {
+    background: transparent
+}
+
+.content h1.title-content {
+    background: #ef4949;
+    color: #f9c4c4;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-left: 15px
+}
+
+.content > p {
+    margin: 15px 10px
+}
+
+.footer .copyright {
+    background-color: #839390;
+    color: #ced3d9;
+    padding-bottom: 10px;
+    padding-top: 6px;
+    text-align: center
+}
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer h1 {
+    font-size: 14px;
+    margin: 5px;
+    padding: 0;
+}
+
+.footer .copyright a {
+    color: #fff;
+    font-weight: 700
+}</style>
+<div class="main-wrapper">
+    <div class="header">
+        <div class="logo-wrap">
+            <a href="/" class="logo">
+                <img src="data:image/png;base64,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" alt="logo">
+            </a>
+        </div>
+    </div>
+    <div class="content">
+        <h1 class="title-content text-center">Internal Server Error</h1>
+
+        <br>
+        <p class="text-center" style="font-size: 20px;">Oops, server error and we are working on it. Please, refresh the page or try again later.</p>
+        <br>
+    </div>
+
+    <div class="footer">
+        <div class="copyright">
+            <div class="cf-error-details cf-error-502">
+  <h1>Bad gateway</h1>
+  <p>The web server reported a bad gateway error.</p>
+  <ul class="cferror_details">
+    <li>Ray ID: 46e4f1ee9ad28406</li>
+    <li>Your IP address: 87.76.73.66</li>
+    <li>Error reference number: 502</li>
+    <li>Cloudflare Location: Kiev</li>
+  </ul>
+</div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

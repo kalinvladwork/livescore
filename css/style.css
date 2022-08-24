@@ -1,0 +1,855 @@
+@import url(normalize.css);
+body {
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  color: #290011;
+  background: #F5F5F5;
+  text-align: center;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #290011; }
+  a:hover {
+    text-decoration: underline; }
+
+.color-white {
+  color: #ffffff !important; }
+
+.color-red {
+  color: #ff0000 !important; }
+
+.color-green {
+  color: #006240 !important; }
+
+.color-blue {
+  color: #0000ff !important; }
+
+.color-gray {
+  color: #808080 !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-left {
+  text-align: left !important; }
+
+.p0 {
+  padding: 0 !important; }
+
+.p10 {
+  padding: 10px !important; }
+
+.clear {
+  clear: both; }
+
+.label-new {
+  position: relative;
+  right: 2px;
+  top: -5px;
+  line-height: 12px;
+  text-decoration: none;
+  padding: 0 3px;
+  border-radius: 4px;
+  background: #f60;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 3px; }
+
+.main-wrapper {
+  text-align: left;
+  background-color: #fafafa;
+  border-left: 1px solid #CECECE;
+  border-right: 1px solid #CECECE;
+  border-bottom: 1px solid #CECECE;
+  max-width: 500px;
+  min-width: 220px;
+  z-index: 100;
+  color: #151515;
+  margin-left: auto;
+  margin-right: auto; }
+
+.header .logo-wrap {
+  padding: 4px;
+  background-color: #fff; }
+  .header .logo-wrap a.logo {
+    color: #fff;
+    text-decoration: none;
+    max-width: 200px; }
+    .header .logo-wrap a.logo img {
+      width: 109px;
+      height: 19px;
+      margin: 20px 5px 0; }
+.header .subscribe_link {
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  float: right;
+  padding: 3px 5px;
+  margin: 5px;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ef4949;
+  position: relative; }
+  .header .subscribe_link:before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 0;
+    width: 8px;
+    height: 26px;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    background: #ef4949; }
+.header .header-user {
+  display: inline-block;
+  width: 210px;
+  float: right;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold; }
+.header .advertising-header {
+  display: block;
+  height: 60px;
+  text-align: center; }
+.header .wrap-goal {
+  padding: 10px;
+  font-weight: bold; }
+
+.title-date {
+  padding: 8px;
+  text-align: center;
+  color: #fff;
+  background-color: #00AC72;
+  margin-bottom: 5px; }
+
+.nav-wrap {
+  padding: 5px 5px 10px 5px; }
+  .nav-wrap .sorting-day {
+    margin: 0 0 10px 0; }
+    .nav-wrap .sorting-day a {
+      color: #290011; }
+      .nav-wrap .sorting-day a:hover {
+        color: #F23E00;
+        text-decoration: none; }
+  .nav-wrap .sorting-league {
+    color: #ADADAD;
+    margin: 0 0 10px 0; }
+    .nav-wrap .sorting-league a {
+      color: #ADADAD; }
+      .nav-wrap .sorting-league a:hover {
+        color: #F23E00;
+        text-decoration: none; }
+      .nav-wrap .sorting-league a.active {
+        color: #290011; }
+        .nav-wrap .sorting-league a.active:hover {
+          color: #F23E00; }
+    .nav-wrap .sorting-league p {
+      color: #808080; }
+    .nav-wrap .sorting-league .name {
+      color: #fff;
+      background-color: gray;
+      padding: 2px 8px; }
+  .nav-wrap form.search {
+    margin: 0 0 10px 0; }
+
+.refresh {
+  color: #d73739;
+  font-weight: bold; }
+
+.ts-all {
+  background: #547058;
+  text-align: center;
+  padding: 8px; }
+  .ts-all .ts-all-href {
+    text-decoration: none;
+    color: #e2e7e2;
+    padding: 2px; }
+
+.ts-all-2 {
+  background: none repeat scroll 0 0 #e8e8e8;
+  text-align: left;
+  padding: 8px; }
+  .ts-all-2 a {
+    text-decoration: none;
+    color: #171515;
+    padding: 2px; }
+
+.subscribe {
+  margin: 5px; }
+  .subscribe h3 {
+    margin: 5px; }
+  .subscribe label {
+    display: block;
+    color: #1f2224;
+    font-size: 12px;
+    margin-bottom: 4px; }
+  .subscribe button {
+    width: 48px;
+    display: inline-block;
+    background: #EF4949;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 3px 6px; }
+  .subscribe input[type="text"] {
+    display: inline-block;
+    width: calc(100% - 60px );
+    margin-bottom: 8px;
+    border: 1px solid #c3c3c3;
+    padding: 2px; }
+  .subscribe #country_code {
+    height: 16px;
+    width: 56px;
+    text-align: left;
+    border: 1px solid #c3c3c3;
+    display: inline-block;
+    background: #fff;
+    padding: 1px; }
+    .subscribe #country_code img {
+      width: 12px;
+      height: 12px; }
+    .subscribe #country_code input {
+      text-align: right;
+      display: inline-block;
+      width: calc(100% - 16px);
+      border: none;
+      padding: 0;
+      margin: 0;
+      line-height: 1; }
+  .subscribe #sub_phone {
+    width: calc(100% - 60px - 65px); }
+  .subscribe .header-check {
+    margin: 10px 0 15px;
+    color: #000000; }
+    .subscribe .header-check [type="checkbox"] {
+      height: 15px;
+      width: 15px; }
+    .subscribe .header-check a {
+      color: #00ac72;
+      text-decoration: underline; }
+    .subscribe .header-check label {
+      display: inline-block; }
+
+#form-subscribe {
+  display: block;
+  padding: 5px;
+  color: #ffffff; }
+  #form-subscribe button {
+    display: inline-block;
+    background: #EF4949;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 3px 6px; }
+  #form-subscribe input[type="text"] {
+    display: inline-block; }
+  #form-subscribe .header-check {
+    margin: 10px 0 15px;
+    color: #000000; }
+    #form-subscribe .header-check [type="checkbox"] {
+      height: 15px;
+      width: 15px; }
+    #form-subscribe .header-check a {
+      color: #00ac72;
+      text-decoration: underline; }
+  #form-subscribe label {
+    font-size: 12px; }
+
+.categories-letter {
+  background-color: #d2d2d2;
+  padding: 5px 0; }
+
+.content {
+  background: transparent; }
+  .content h1.title-content {
+    background: #EF4949;
+    color: #f9c4c4;
+    padding-left: 15px;
+    margin-top: 0;
+    margin-bottom: 10px; }
+  .content > p {
+    margin: 15px 10px; }
+  .content .index {
+    background-color: #E0E3E5;
+    margin-bottom: 5px;
+    line-height: 22px; }
+    .content .index .item {
+      background-color: #FAFAFA;
+      border-bottom: 1px solid #E6E6E6;
+      padding: 3px 0 3px 8px; }
+      .content .index .item:nth-child(2n) {
+        background-color: #F1F1F1;
+        padding: 3px 0 3px 8px; }
+    .content .index .advertising-content {
+      display: block;
+      height: 60px;
+      text-align: center; }
+  .content .search_relevance {
+    padding: 5px; }
+    .content .search_relevance a {
+      display: inline-block;
+      margin-bottom: 5px; }
+      .content .search_relevance a.relevance {
+        font-weight: bold;
+        text-decoration: underline; }
+  .content.forum .title-forum {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  .content.forum a {
+    color: #004294;
+    text-decoration: none; }
+    .content.forum a:hover {
+      color: #F23E00;
+      text-decoration: underline; }
+  .content.forum .reg_log {
+    float: right;
+    margin-right: 15px; }
+    .content.forum .reg_log .username {
+      color: #00AC72;
+      font-style: italic; }
+  .content.forum .index {
+    line-height: normal; }
+    .content.forum .index .item {
+      background-color: #F2F2F2;
+      border-bottom: 1px solid #E6E6E6;
+      padding: 10px; }
+      .content.forum .index .item:nth-child(2n) {
+        background-color: #E5E5E5;
+        padding: 10px; }
+      .content.forum .index .item .user {
+        color: #dc6868; }
+  .content .forum_content {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #F2F2F2;
+    color: #464646; }
+    .content .forum_content .forum_topic_text {
+      padding: 10px 10px 0 0; }
+    .content .forum_content .author-info {
+      margin: 15px 0 10px; }
+  .content .comments-wrap {
+    border-top: 1px solid #D1D1D1; }
+    .content .comments-wrap .forum_comment {
+      border-left: 1px solid #D1D1D1;
+      border-right: 1px solid #D1D1D1;
+      border-bottom: 1px solid #D1D1D1;
+      padding: 10px; }
+      .content .comments-wrap .forum_comment .user-date {
+        color: green;
+        font-weight: bold;
+        padding-bottom: 5px; }
+  .content .forum_content form {
+    margin: 10px;
+    font-size: 13px; }
+    .content .forum_content form .form-group {
+      margin-bottom: 10px; }
+      .content .forum_content form .form-group input {
+        height: 25px;
+        margin-bottom: 5px; }
+    .content .forum_content form textarea {
+      max-width: 400px; }
+  .content .form-element {
+    height: 25px; }
+  .content .btn, .content a.btn {
+    color: #fff;
+    padding: 4px 7px;
+    border: 1px solid #00AC72;
+    background-color: #00AC72;
+    cursor: pointer;
+    transition: 0.5s; }
+    .content .btn:hover, .content a.btn:hover {
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none; }
+  .content .reg-font {
+    font-size: 18px;
+    word-wrap: break-word; }
+  .content.odds table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse; }
+    .content.odds table tr th {
+      text-align: center; }
+    .content.odds table tr td {
+      vertical-align: top;
+      padding: 5px 2px; }
+      .content.odds table tr td:first-child {
+        vertical-align: top;
+        padding: 5px 10px; }
+  .content table.odds_ban {
+    border: 1px solid #00AC72; }
+    .content table.odds_ban img {
+      max-width: 60px;
+      margin: 0 0 -4px 0; }
+    .content table.odds_ban td {
+      border: none !important;
+      padding: 3px 7px 2px; }
+      .content table.odds_ban td > div {
+        display: inline-block;
+        width: 19%; }
+        .content table.odds_ban td > div:first-child {
+          text-align: left; }
+    .content table.odds_ban .line div {
+      border: solid 1px #00a36d;
+      background-color: #ffffff; }
+      .content table.odds_ban .line div span:first-child {
+        width: 25%;
+        display: inline-block;
+        height: 100%;
+        border-right: solid 1px #00a36d;
+        text-align: center; }
+      .content table.odds_ban .line div span:last-child {
+        width: 60%;
+        display: inline-block;
+        height: 100%;
+        text-align: center; }
+  @media (max-width: 348px) {
+    .content table.odds_ban td > div {
+      display: inline-block;
+      width: 49%; }
+      .content table.odds_ban td > div:first-child {
+        text-align: left; }
+      .content table.odds_ban td > div.line {
+        width: 32%; } }
+  .content.h2h .title-content {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px; }
+  .content.h2h h2 {
+    border: none;
+    background: #fff;
+    color: #ff3301;
+    font-size: 118.1%;
+    text-transform: uppercase;
+    border-bottom: 1px solid #D5D3D6;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 5px 5px; }
+  .content.h2h .title-date {
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 0; }
+  .content.h2h table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse; }
+    .content.h2h table tr {
+      padding: 10px; }
+      .content.h2h table tr td {
+        padding: .1em .4em;
+        font-size: 93%; }
+        .content.h2h table tr td.score-time {
+          padding: 0; }
+          .content.h2h table tr td.score-time a {
+            background-color: #dadada;
+            display: block;
+            text-align: center;
+            color: #000;
+            font-weight: 700;
+            padding: .17em 0; }
+            .content.h2h table tr td.score-time a:hover {
+              background-color: #BBB; }
+        .content.h2h table tr td.team-a {
+          text-align: right;
+          padding-right: .7em; }
+        .content.h2h table tr td.team-b {
+          text-align: left;
+          padding-left: .7em; }
+  .content.predict .index {
+    background: transparent; }
+  .content.predict table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    border-spacing: 0;
+    border-collapse: collapse; }
+    .content.predict table th {
+      text-align: center;
+      color: #223139;
+      background-color: #fff; }
+    .content.predict table td {
+      background-color: #DEDEDE;
+      padding: 5px 2px; }
+      .content.predict table td:first-child {
+        vertical-align: top;
+        padding: 5px 10px; }
+  .content.tables .index {
+    line-height: normal; }
+  .content.tables table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse; }
+    .content.tables table .ts-back-team-name {
+      background: #AFAFAF; }
+      .content.tables table .ts-back-team-name .ts-league-name {
+        text-align: left;
+        width: 50%;
+        color: #e8f4e8;
+        padding: 8px; }
+    .content.tables table .ts-color {
+      color: #e8f4e8;
+      width: 10%; }
+    .content.tables table .ts-team-name {
+      text-align: left;
+      padding: 8px; }
+    .content.tables table .ts-right {
+      margin-right: 3px;
+      color: #585a58; }
+    .content.tables table a {
+      color: #004294;
+      text-decoration: none; }
+      .content.tables table a:hover {
+        color: #F23E00;
+        text-decoration: underline; }
+  .content .info-team img.team-logo {
+    height: 100px;
+    width: 100px;
+    float: left; }
+  .content .team {
+    background: #F5F5F5;
+    padding: 10px; }
+    .content .team h4 {
+      margin: 10px 0 5px 0; }
+    .content .team table {
+      border-collapse: collapse;
+      border-spacing: 0; }
+      .content .team table a {
+        color: #004294;
+        text-decoration: none; }
+        .content .team table a:hover {
+          color: #F23E00;
+          text-decoration: underline; }
+  .content .info-team {
+    padding: 10px;
+    line-height: 1.5em; }
+    .content .info-team img {
+      height: 150px;
+      width: 120px;
+      float: left;
+      padding-right: 10px; }
+    .content .info-team table {
+      border-spacing: 0;
+      border-collapse: collapse; }
+      .content .info-team table a {
+        color: #004294;
+        text-decoration: none; }
+        .content .info-team table a:hover {
+          color: #F23E00;
+          text-decoration: underline; }
+  .content.game_info table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center; }
+    .content.game_info table th, .content.game_info table td {
+      border: 1px solid #00AC72;
+      padding: 3px 7px 2px; }
+    .content.game_info table th {
+      font-size: 1.3em;
+      padding-top: 5px;
+      padding-bottom: 4px;
+      background-color: #00AC72;
+      color: #fff;
+      width: 30%; }
+      .content.game_info table th a {
+        color: #fff; }
+    .content.game_info table td {
+      font-size: 1em; }
+      .content.game_info table td.title {
+        background: #f5f5f5;
+        color: #00a36d;
+        border: none; }
+    .content.game_info table .incidents td {
+      font-size: 1em;
+      background: #fff;
+      border: none; }
+      .content.game_info table .incidents td:first-child {
+        border-right: 1px solid #00AC72; }
+      .content.game_info table .incidents td.goal {
+        vertical-align: top;
+        padding: 5px 10px 5px 10px;
+        text-align: left; }
+    .content.game_info table .incidents a {
+      color: #004294; }
+    .content.game_info table .incidents a.replace_green {
+      color: #00a36d; }
+    .content.game_info table .incidents a.replace_red {
+      color: #ef4949; }
+    .content.game_info table .label_link {
+      font-size: 16px; }
+  .content .title-predictions {
+    padding: 6px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background-color: #5D5D5D;
+    background: linear-gradient(to bottom, #7b7b7b, #464646);
+    background: -moz-linear-gradient(to bottom, #7b7b7b, #464646);
+    background: -webkit-linear-gradient(to bottom, #7b7b7b, #464646);
+    background: -o-linear-gradient(to bottom, #7b7b7b, #464646);
+    background: -ms-linear-gradient(to bottom, #7b7b7b, #464646);
+    text-decoration: none; }
+  .content .title-league {
+    color: #fff;
+    text-align: center;
+    line-height: 20px; }
+    .content .title-league.green {
+      background-color: #3EC495; }
+    .content .title-league.grey {
+      background-color: #808080; }
+  .content .game-info {
+    color: red;
+    text-decoration: underline; }
+  .content .card {
+    text-align: center;
+    font-size: 11px;
+    padding: 1px 3px;
+    border-radius: 4px;
+    text-decoration: none; }
+    .content .card.yellow {
+      background-color: #FEDA3C;
+      color: #AD5700;
+      border: 1px solid #C08161; }
+    .content .card.red {
+      background-color: #FF3900;
+      color: #ffffff;
+      border: 1px solid #C08161; }
+    .content .card.h2h-yellow {
+      background-color: #FFBC5D;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 1px 3px; }
+    .content .card.h2h-red {
+      background-color: #EA0000;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 1px 5px; }
+    .content .card.h2h-green {
+      background-color: #018A00;
+      color: #fff;
+      text-transform: uppercase; }
+  .content .label_link {
+    border-radius: 4px;
+    padding: 1px 3px;
+    text-decoration: none;
+    font-size: 11px;
+    color: #fff;
+    transition: 0.3s; }
+    .content .label_link:hover {
+      background: transparent;
+      color: #290011; }
+    .content .label_link.h2h {
+      background-color: #FF8334; }
+    .content .label_link.odds {
+      background-color: #995151; }
+    .content .label_link.pred {
+      background-color: #79BFCE; }
+  .content .predict_percent {
+    background-color: #fff;
+    color: #04517F;
+    border: 1px solid #9BB9CC;
+    font-weight: 700;
+    padding: 0 5px; }
+    .content .predict_percent.blue {
+      background-color: #04517F;
+      color: #fff; }
+  .content a.back {
+    color: #004294;
+    text-decoration: none; }
+    .content a.back:hover {
+      color: #F23E00;
+      text-decoration: underline; }
+  .content .resume {
+    padding: 5px 10px;
+    color: #151515;
+    line-height: 1.2; }
+  .content .sorting-butt {
+    margin-bottom: 10px; }
+    .content .sorting-butt a {
+      display: inline-block;
+      padding: 3px 8px;
+      margin: 2px;
+      color: white;
+      text-decoration: none;
+      font-size: 14px; }
+      .content .sorting-butt a.bg-yellow {
+        background-color: #F6B41F; }
+      .content .sorting-butt a.bg-cerulean {
+        background-color: #02BDD7; }
+      .content .sorting-butt a.bg-violet {
+        background-color: #A84AC4; }
+  .content .breadcrumbs a {
+    color: #AEAEAE; }
+    .content .breadcrumbs a.active {
+      color: #222E2E; }
+  .content.news {
+    background-color: #f5f5f5; }
+    .content.news .index {
+      background-color: #f5f5f5; }
+      .content.news .index .item {
+        background-color: #f5f5f5; }
+        .content.news .index .item p {
+          margin: 3px 0;
+          line-height: 1.3; }
+        .content.news .index .item a {
+          color: #004294; }
+    .content.news .title-wrap {
+      background-color: #273238;
+      padding: 5px 7px;
+      color: #ffffff; }
+      .content.news .title-wrap h3, .content.news .title-wrap p {
+        margin: 0; }
+    .content.news h2.title-news {
+      padding: 3px 5px;
+      color: #ffffff;
+      background-color: #273238;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0; }
+    .content.news .news-link {
+      color: #17548d;
+      font-size: 14px;
+      font-weight: bold; }
+    .content.news hr {
+      border: none;
+      background-color: #E5E5E5;
+      height: 1px;
+      color: #E5E5E5; }
+  .content .reduction {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    width: 100%; }
+  .content .nav-info {
+    font-size: 11px;
+    margin: 0; }
+  .content .tags a {
+    display: inline-block;
+    color: #004294;
+    text-align: center;
+    font-size: 13px;
+    padding: 3px 6px;
+    border: 1px solid #004294; }
+    .content .tags a.active {
+      background-color: #004294;
+      color: #ffffff; }
+  .content .pagination {
+    padding: 3px;
+    margin: 3px 3px 10px 3px;
+    display: inline-block; }
+    .content .pagination li {
+      list-style: none;
+      float: left;
+      margin-left: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px; }
+    .content .pagination .active, .content .pagination .disabled {
+      padding: 2px 5px;
+      margin-top: 2px;
+      color: #000; }
+    .content .pagination .active {
+      border: 1px solid #005DB7; }
+    .content .pagination .disabled {
+      border: 1px solid #E5E5E5; }
+    .content .pagination a {
+      padding: 2px 5px;
+      border: 1px solid #AAD;
+      color: #009; }
+      .content .pagination a:active, .content .pagination a:hover {
+        border: 1px solid #009;
+        color: #000; }
+
+.footer {
+  background-color: #839390;
+  padding: 10px 10px; }
+  .footer .copyright {
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.23; }
+    .footer .copyright a {
+      color: #fff;
+      font-weight: bold; }
+  .footer .advertising-footer {
+    display: block;
+    height: 60px;
+    text-align: center; }
+
+.nav-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .nav-footer .nav_link {
+    display: block;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 1.23;
+    letter-spacing: normal;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px; }
+
+.col-sm-12, .col-md-6 {
+  position: relative;
+  width: 100%;
+  min-height: 1px; }
+
+@media (max-width: 300px) {
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+@media (min-width: 300px) {
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; } }
+#modal-cookie {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: #263238;
+  color: #ffffff;
+  padding: 0;
+  box-sizing: border-box; }
+  #modal-cookie .modal-body {
+    max-width: 500px;
+    padding: 8px;
+    text-align: left;
+    margin: 0 auto; }
+  #modal-cookie p {
+    margin: 0; }
+  #modal-cookie .nav-modal {
+    margin-top: 5px;
+    text-align: right; }
+    #modal-cookie .nav-modal a:hover {
+      text-decoration: none; }
+    #modal-cookie .nav-modal .more {
+      background-color: #ffb300;
+      display: inline-block;
+      color: #ffffff;
+      padding: 2px 6px;
+      font-size: 13px; }
+    #modal-cookie .nav-modal #modal-ok {
+      background-color: #ef4949;
+      display: inline-block;
+      color: #ffffff;
+      padding: 2px 6px;
+      text-transform: uppercase;
+      font-size: 13px; }
+
+/*# sourceMappingURL=style.css.map */
